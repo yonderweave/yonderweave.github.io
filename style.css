@@ -1,0 +1,121 @@
+/* Сброс стандартных отступов и маргинов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Общие стили для сайта */
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: #000000; /* Основной задний фон */
+    color: #000000;
+    line-height: 1.6;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Центрирование содержимого */
+.container {
+    width: 90%;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Стили для никнейма и аватара слева */
+.profile-header.left-align {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Расстояние между аватаркой и ником */
+    margin-bottom: 12px;
+}
+
+.profile-header.left-align .avatar img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid #30363d;
+}
+
+.profile-header.left-align .nickname {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+/* Заголовок about me */
+h2 {
+    color: #8b949e;
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-size: 1.4em;
+}
+
+/* Блок с биографией */
+.bio-card {
+    background-color: #000000; /* Цвет фона блока с информацией */
+    padding: 25px;
+    border-radius: 16px;
+    border: 1px solid #535258;
+    text-align: left;
+    margin-top: 25px;
+    width: 100%;
+    color: #c9d1d9;
+    font-size: 1.1em;
+}
+
+/* Стили для dl */
+dl {
+    margin-top: 15px;
+}
+
+dl dt {
+    font-weight: 600;
+    color: #a633ff;
+}
+
+dl dd {
+    margin-bottom: 15px;
+    color: #b1bac4;
+}
+
+/* Стили для выделенного текста */
+strong {
+    color: #a633ff;
+}
+
+/* Градиент для кнопки Telegram с новым цветом */
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #a633ff, #2b32b2); /* Новый градиент */
+    color: #ffffff;
+    border-radius: 28px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-size: 1.1em;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(88, 166, 255, 0.6);
+}
+
+/* Стили для футера */
+footer {
+    margin-top: 40px;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 1em;
+}
+
+footer p {
+    color: #6e7681;
+}
